@@ -63,7 +63,7 @@ function Header() {
                         <span className="regulars text-white whitespace-nowrap"> <i className="fa-regular fa-heart"></i> <span className='noxs'>Seçilmişlər</span> </span>
                         <span>                            
                             <Link to="/basket">
-                                <span className="regulars text-white whitespace-nowrap"> <i className="fa-solid fa-cart-shopping relative">  { basket.length>0? <div class="absolute inline-flex items-center justify-center w-4 h-4 text-xs font-bold text-white bg-[#7C62E3] border-2 border-white rounded-full -top-2 -right-2 dark:border-gray-900">{basket.length}</div>:null}</i> <span className='noxs'> Səbət </span> </span>
+                                <span className="regulars text-white whitespace-nowrap"> <i className="fa-solid fa-cart-shopping relative">  { basket.length>0? <div className="absolute inline-flex items-center justify-center w-4 h-4 text-xs font-bold text-white bg-[#7C62E3] border-2 border-white rounded-full -top-2 -right-2 dark:border-gray-900">{basket.length}</div>:null}</i> <span className='noxs'> Səbət </span> </span>
                             </Link>
                         </span>
                     </span>

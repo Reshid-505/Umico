@@ -18,7 +18,7 @@ function App() {
   const [mainData, setMainData] = useState([])
   const [menuData,setMenuData] = useState([])
   const [allProducts, setAllProducts] = useState([])
-  const [basket, setBasket] = useState([])
+  const [basket, setBasket] = useState(JSON.parse(localStorage.getItem("basket")))
   const [likedProduct, setLikedProduct] = useState([])
   const [search, setSearch] = useState("")
   const [showModal, setShowModal] = useState(false)
@@ -61,6 +61,9 @@ function App() {
         .then(json => { setMenuData(json.data); })   
 
   },[])
+  useEffect(() => {
+    localStorage.setItem("basket",JSON.stringify(basket))
+  },[basket])
 
   useEffect(() => {
     mainData.map(i => i.products.map(item => setAllProducts(allProducts => [...allProducts, item])))
@@ -74,6 +77,7 @@ function App() {
     }else{
       x.piece+=1
     }
+    localStorage.setItem("basket",JSON.stringify(basket))
   }
   const data = {
     mainData,
