@@ -1,0 +1,138 @@
+.bggrey{
+    background: #f7f7f7;
+}
+main .watchStory{
+    padding: 25px 0 50px;
+}
+main .watchStory .watchedCards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+.center{
+    display: flex;
+    justify-content: center;
+}
+main .grids{
+    max-width: 1280px;
+    /* height: 755px;*/
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+main .grids h2{
+    margin: 12px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 150%;
+    color: #1e244d;
+}
+main .grids h2 img{
+    height: 28px;
+}
+main .topGrid, main .bottomGrid{
+    display: grid;
+}
+main .topGrid *, main .bottomGrid *{
+    cursor: pointer;
+}
+main .topGrid{
+    grid-template-columns: 416px 200px 200px 200px 200px;
+    grid-template-rows: 1fr 1fr;
+    gap: 16px;
+}
+main .bottomGrid{
+    grid-template-columns: 243.2px 243.2px 243.2px 243.2px 243.2px;
+    grid-template-rows: 1fr;
+    gap: 16px;
+}
+main .grid2x2{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+main .grid1x3{
+    grid-column-start: 3;
+    grid-column-end: 6;
+}
+main .sliders{
+    padding: 25px 60px 50px;
+    margin:  auto;
+    max-width: 1280px;
+}
+main .brandsCard img{
+    height: 56px;
+}
+main .brandsCard{
+    width: 234px;
+    height: 88px;
+    padding: 10px;
+    background: #fff;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+main .slick-dots li button::before{
+    color: #C5C5C5 !important;
+}
+main .slick-dots li.slick-active button::before{
+    color: #7C62E2 !important;
+}
+main button.slick-arrow::before {
+font-size: 48px;
+color: #fff;
+opacity: 1;
+}
+main button.slick-arrow{
+    height: 48px;
+    width: 48px;
+}
+main .slick-disabled::before{
+    color: #fff0;
+    opacity: 0;
+}
+
+main button.slick-prev{
+    margin-left: -30px;
+}
+main button.slick-next{
+    margin-right: -30px;
+}
+main .sliders h2, main .bggrey h2{
+    margin: 48px 0;
+    font-weight: 700;
+    color: #1e244d;
+    font-size: 32px;
+}
+
+@media only screen and (max-width: 1000px) {
+    main .grids{
+        padding: 0 10px;
+        height: 250vw;
+    }
+    main .grids h2{
+        justify-content: space-between;
+        font-size: 20px;
+    }
+    main .topGrid{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 16px; 
+    }
+    main .bottomGrid{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 16px;
+    }
+    main .grid2x2{
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+    main .grid1x3{
+        display: none;
+    }
+}

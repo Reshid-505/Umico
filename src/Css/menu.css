@@ -1,0 +1,81 @@
+menu{
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+
+}
+menu .menuMain{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-direction: row;
+    padding-bottom: 30px;
+}
+
+menu .nestedMenu{
+    padding: 8px 0;
+    width: 256px;
+    height: 500px;
+}
+menu .menuElem{
+    font-size: 13px;
+    white-space: nowrap;
+    display: flex;
+    padding: 7px 17px;
+    color: #333;
+}
+menu .menuElem:hover{
+    color: #9B81FE;
+}
+
+menu ul.boxList{
+    height: 432px;
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+menu .boxes{
+    max-width: 280px;
+    height: 138px;
+    background-color: #7C62E2;
+}
+menu .boxes img{
+    height: 138px;
+    width: 280px;
+}
+menu .slider{
+    max-width: 688px;
+}
+menu ul.slick-dots {
+    border-radius:7px;
+    background-color: #6666667a;
+    margin-top: -30px;
+    position: relative;
+    top:10px;
+    left: calc(50% - 100px);
+    padding: 0;
+    width: 168px;
+    height: 14px;
+}
+menu .slick-dots li button:before{
+    color: #fff !important;
+    opacity: 1 !important;
+}
+menu .slick-dots li.slick-active button:before{
+    color: #7C62E2 !important;
+}
+menu .slick-dots li{
+    position: relative;
+    top: -10px;
+    left: -10px;
+    width: 5px !important;
+    height: 5px !important;
+}
+
+@media only screen and (max-width: 1000px) {
+    menu .slider{
+        margin: auto;
+        width: 90vw;
+    }
+}

@@ -1,0 +1,86 @@
+.productCard{
+    position: relative;
+    background-color: #FFF;
+    padding: 10px 0;
+    width: 250px;
+    height: 450px;
+}
+.productCard .topCard, .productCard .bottomCard, .productCard .addCartButton{
+    padding: 0 20px;
+} 
+.productCard .topCard{
+    display: flex;
+    flex-direction: row;
+}
+.productCard .topCard img{
+    width: 202px;
+    max-height: 200px;
+}
+.productCard .topCard .buttons button{
+    font-size: 16px;
+    margin: 5px 0;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #fff;
+}
+.productCard .topCard .buttons {
+    margin-left: -12.5px;
+}
+.productCard .topCard button i{
+    color: #9a9db2;
+}
+.productCard .topCard button i:hover{
+    color: #FF4B81;
+}
+.productCard .bottomCard{
+    margin: 10px 0 0 0;
+}
+.productCard .bottomCard .price{
+    font-weight: bolder;
+    font-size: 16px;
+    color: #1e244d;
+}
+.productCard .bottomCard .price span.discount{
+    color: #ff4b81;
+}
+.productCard .bottomCard .title{
+    margin-top: 4px;
+    margin-bottom: 15px;
+    font-size: 13px;
+    line-height: 150%;
+}
+.productCard .bottomCard .seller{
+    font-weight: 400;
+    font-size: 11px;
+    color: #9497ad;
+    margin-top: 4px;
+}
+.productCard .bottomCard .seller span{
+    color: #1e244d;
+    margin-left: 2px;
+}
+.productCard .addCartButton{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    cursor: pointer;
+    font-weight: 700;
+    line-height: 20px;
+    height: 42px;
+    position: absolute;
+    bottom: 0;
+    border-top: solid 1px #E7E8ED;
+    color: #7C62E3;
+    padding: 11px 24px ;
+
+}
+.productCard .addCartButton i{
+    margin-right: 8px;
+    font-size: 20px;
+}
+.productCard .addCartButton button{
+    display: flex;
+    align-items: center;
+}

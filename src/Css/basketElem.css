@@ -1,0 +1,12 @@
+@media only screen and (max-width: 1000px) {
+    .basketElem{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .basketElem .pieceInp{
+        justify-content: space-between;
+    }
+    .basketElem img{
+        width: 18vw;
+    }
+}    

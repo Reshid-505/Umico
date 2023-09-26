@@ -1,0 +1,29 @@
+@media only screen and (max-width: 1000px) {
+    .categoryProds{
+        flex-direction: column;
+    }
+    .categoryProds .cards{
+        justify-content: center;
+        /* max-width: 1100px; */
+    }
+    .categoryProds .filtr{
+        margin: auto;
+        width: 95vw;
+    }
+    .categoryProds .filtr h2{
+        margin: 10px auto;
+        padding: 10px;
+        width: 40vw;
+        border-radius: 5px;
+        background: #7C62E3;
+        border: none;
+        color: #FFF;
+        text-align: center;
+    }
+    .categoryProds .priceDetails .inputs{
+        justify-content: center;
+        gap: 20px;
+       
+    }
+    
+}

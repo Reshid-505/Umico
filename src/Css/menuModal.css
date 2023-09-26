@@ -1,0 +1,33 @@
+.modalMenu{
+    position: fixed;
+    /* top: 0; */
+    z-index: 50;
+}
+.modalMenu .nestedMenu{
+    margin: 3vh 15vw ;
+    padding: 8px 0;
+    width: 256px;
+    height: 500px;
+    background-color: #FFF;
+}
+.modalMenu .menuElem{
+    font-size: 13px;
+    white-space: nowrap;
+    display: flex;
+    padding: 7px 0;
+    color: #333;
+}
+.modalMenu .menuElem:hover{
+    color: #9B81FE;
+}
+@media only screen and (max-width: 1000px) {
+    .modalMenu{
+        position: absolute;
+        top: 0;
+        z-index: 50;
+    }
+    .modalMenu .nestedMenu{
+        width: 90vw;
+        margin: 3vh auto;
+    }
+}

@@ -1,0 +1,140 @@
+*{
+    font-family: sans-serif;
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.logo{
+    height: 35px;
+}
+.topHead{
+    border-bottom: 1px solid #666;
+}
+.topHead,.bottomHeader{
+    background-color: #242B58;
+}
+.topHeader{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+.leftheader, .rightheader{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.topHeader .leftheader span,.topHeader .rightheader span{
+    cursor: pointer;
+    font-size: .7em;
+    transition: .5s;
+}
+.topHeader .leftheader span:hover,.topHeader .rightheader span:hover{
+    color: #ffffffb3;
+}
+.leftheader{
+    margin: 0;
+    padding: 0;
+}
+.special{
+    background: linear-gradient(225deg, rgba(254,75,129,1) 0%, rgba(196,85,173,1) 50%, rgba(125,97,226,1)  100%);
+    padding: 1px 4px ;
+    border-radius: 2px;
+}
+.rotate i{
+    transition: .5s;
+}
+
+.flag img{
+    width: 15px;
+}
+/* ----------------------------------------------------------------------------------------------------------------------------------------- */
+.bottomInner{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+.search{
+    display: flex;
+    align-items: center;
+}
+button.rotate{
+    min-height: 35px;
+    border: none;
+    background-color: #7C62E3;
+    color: #fff;
+    font-size: .75rem;
+    font-weight: bold;
+    border-radius: 1px;
+}
+button.rotate:hover{
+    background-color: #6449d1;
+}
+header input,.bottomHeader select,.search button{
+    outline: none;
+    border: none;
+    font-size: .8rem;
+    height: 35px;
+}
+header input{
+    padding: 5px;
+    border-radius:1px 0 0 1px ;
+    width: 30vw;
+    border-right: .5px solid #ccc;
+}
+.regulars{
+    cursor: pointer;
+    word-spacing: 5px;
+    font-weight: bold;
+    font-size: .8rem;
+    margin-left: 40px;
+}
+.regulars:hover{
+    color: #ffffffb3;
+}
+.search .searchButton{
+    display: inline-block;
+    width: 35px;
+    color: #fff;
+    background: #7C62E3;
+    border-radius: 0 1px 1px 0;
+}
+.search .searchButton:hover{
+    background: #8871e4;
+}
+.rotate:focus i:last-child {
+    transform: rotate(180deg);
+  }
+
+
+  
+  @media only screen and (max-width: 1000px) {
+    header{
+        position: relative;
+    }
+    .bottomInner{
+        flex-direction: column;
+    }
+    .bottomInner .catalog button{
+        width: 90vw;
+    }
+    .bottomInner .search input{
+        width: calc(90vw - 113px);
+    }
+    .bottomInner .buttons{
+        display: flex;
+        justify-content: space-evenly;
+        gap: 15vw;
+    }
+    .bottomInner .buttons .regulars{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+        gap: 8px;
+    }
+}

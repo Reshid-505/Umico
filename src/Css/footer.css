@@ -1,0 +1,58 @@
+footer{
+    font-family: sans-serif;
+}
+.topFooter{
+    background-color: #7C62E3;
+    display: flex;
+    flex-direction: row;
+}
+.topFooter .appLogo div img{
+    height: 50px;
+    width: 121px;
+}
+.topFooter .topMain{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0 170px;
+}
+.topFooter .left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.topFooter .left .appLogo{
+    display: flex;
+    gap: 30px;
+}
+.topFooter .left .appLogo img{
+    width: 150px;
+}
+.bottomFooter{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 1rem;
+    font-weight: 100 ;
+    justify-content: space-evenly;
+}
+
+.bottomFooter ul{
+    margin-bottom: 50px;
+    list-style: none;
+}
+.bottomFooter li{
+    cursor: pointer;
+    margin:8px 5px ;
+}
+.bottomFooter .link{
+    color: #7C62E3;
+}
+.bottomFooter .small-text{
+    max-width: 200px ;
+    font-size: .8rem;
+}
+.bottomFooter .linkHover li:nth-child(n+2):hover {
+    color: blue;
+}
